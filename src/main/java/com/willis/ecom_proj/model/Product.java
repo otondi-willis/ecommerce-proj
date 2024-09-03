@@ -11,8 +11,8 @@ import java.util.Date;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 
 public class Product {
     @Id
@@ -25,12 +25,12 @@ public class Product {
     private String category;
 
     private Date releaseDate;
-    private boolean isAvailable;
-    private int quantity;
+    private boolean productAvailable;
+    private int stockQuantity;
 
     private String imageName;
     private String imageType;
-@Lob
+    @Lob
     private byte[] imageData;
 
 
