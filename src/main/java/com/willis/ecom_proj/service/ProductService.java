@@ -21,5 +21,6 @@ public class ProductService {
     }
 
     public Product addProduct(Product product, MultipartFile imageFile) {
+     repository.save(product);
     }
 }
