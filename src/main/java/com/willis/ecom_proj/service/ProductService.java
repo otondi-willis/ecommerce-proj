@@ -34,4 +34,8 @@ public class ProductService {
     product.setImageType(imageFile.getContentType());
         return repository.save(product);
     }
+
+    public void deleteProduct(int id) {
+        repository.deleteById(id);
+    }
 }
