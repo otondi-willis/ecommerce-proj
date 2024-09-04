@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
     //JPQL- same as SQL in SQL we use tables,column names here we use class names, field names
-    @Query
+    @Query()
     List<Product> searchProducts(String keyword);
 }
